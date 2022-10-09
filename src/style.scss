@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 1rem;
+  max-width: max-content;
+  margin: 1rem auto;
+  padding: 2rem;
+  background-color: rgba(0, 255, 255, 0.3);
+
+  &__count {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  &__buttons {
+    margin-top: 1rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.form-wrapper {
+  &-header {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  &-children {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto minmax(auto, 400px);
+  }
+}
